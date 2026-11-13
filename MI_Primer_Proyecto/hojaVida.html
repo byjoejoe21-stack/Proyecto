@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Lenin Bedoya</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333333;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+        }
+
+        .contact-info span {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px 12px;
+            border-radius: 20px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h3 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .item-date {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .item-subtitle {
+            font-size: 0.95rem;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: var(--bg-color);
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+            .content {
+                padding: 20px;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Encabezado / Datos Personales -->
+        <header>
+            <h1>Lenin Joel Bedoya Ayala</h1>
+            <h2>Título Profesional (Ej: Desarrollador Web / Diseñador)</h2>
+            <div class="contact-info">
+                <span>📧 correo@example.com</span>
+                <span>📱 +593 999 999 999</span>
+                <span>📍 Ciudad, País</span>
+                <span>🔗 linkedin.com/in/tu-usuario</span>
+            </div>
+        </header>
+
+        <!-- Contenido Principal -->
+        <div class="content">
+            
+            <!-- Perfil Profesional -->
+            <section>
+                <h3>Perfil Profesional</h3>
+                <p>Breve descripción sobre quién eres, tus años de experiencia, tus fortalezas principales y lo que puedes aportar a una empresa u organización. Diseñado para captar la atención del reclutador en pocos segundos.</p>
+            </section>
+
+            <!-- Experiencia Laboral -->
+            <section>
+                <h3>Experiencia Laboral</h3>
+                
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Nombre del Puesto / Cargo</span>
+                        <span class="item-date">2023 - Presente</span>
+                    </div>
+                    <div class="item-subtitle">Nombre de la Empresa - Ciudad</div>
+                    <ul>
+                        <li>Logro o responsabilidad principal número uno realizada en este puesto.</li>
+                        <li>Desarrollo de proyectos utilizando tecnologías clave (HTML, CSS, JavaScript, etc.).</li>
+                        <li>Mejora en los procesos internos que aumentó la eficiencia en un X%.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Puesto Anterior</span>
+                        <span class="item-date">2021 - 2023</span>
+                    </div>
+                    <div class="item-subtitle">Nombre de la Empresa Anterior - Ciudad</div>
+                    <ul>
+                        <li>Descripción de tareas y responsabilidades diarias.</li>
+                        <li>Participación en equipos multidisciplinarios.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Educación -->
+            <section>
+                <h3>Educación</h3>
+                
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Título Universitario / Carrera</span>
+                        <span class="item-date">2017 - 2021</span>
+                    </div>
+                    <div class="item-subtitle">Nombre de la Universidad o Institución</div>
+                </div>
+            </section>
+
+            <!-- Habilidades -->
+            <section>
+                <h3>Habilidades</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML5 / CSS3 / JavaScript</div>
+                    <div class="skill-item">Gestión de Proyectos</div>
+                    <div class="skill-item">Trabajo en Equipo</div>
+                    <div class="skill-item">Resolución de Problemas</div>
+                    <div class="skill-item">Inglés (Intermedio/Avanzado)</div>
+                    <div class="skill-item">Git / GitHub</div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>
